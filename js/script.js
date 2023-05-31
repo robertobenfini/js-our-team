@@ -1,3 +1,4 @@
+//variabile array
 let array = [
     {
         'name': 'Wayne Barnett',
@@ -36,4 +37,13 @@ let array = [
     }
 ]
 
-console.log(array)
+//stampo in console l'array
+console.log(array);
+
+//ciclo for per visualizzare informazioni
+for(let i=0; i<array.length; i++){
+    let card = array[i];
+
+    //stampo in console le informazioni
+    console.log(card);
+}
