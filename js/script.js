@@ -35,15 +35,30 @@ let array = [
         'role': 'Graphic Designer',
         'image': 'barbara-ramos-graphic-designer.jpg'
     }
-]
+];
 
 //stampo in console l'array
 console.log(array);
 
-//ciclo for per visualizzare informazioni
-for(let i=0; i<array.length; i++){
-    let card = array[i];
+//recupero contenitore dal DOM
+let container = document.getElementById('container_cards');
 
-    //stampo in console le informazioni
-    console.log(card);
+//ciclo for per visualizzare info
+for(let i=0; i<array.length; i++){
+    let info_card = array[i];
+
+    //stampo in console le info
+    console.log(info_card);
+    
+    //variabile per creare un contenitore con le info
+    let card = `<div>
+                    <p>${info_card.image}</p>
+                    <p>${info_card.name}</p>
+                    <p>${info_card.role}</p>
+                </div>`;
+    
+    //stampo le info nel DOM
+    container.innerHTML += card;
 }
+
+
