@@ -48,7 +48,9 @@ for(let i=0; i<array.length; i++){
     let info_card = array[i];
 
     //stampo in console le info
-    console.log(info_card);
+    console.log(info_card.name);
+    console.log(info_card.role);
+    console.log(info_card.image);
     
     //variabile per creare un contenitore con le info
     let card = `<div>
@@ -60,5 +62,3 @@ for(let i=0; i<array.length; i++){
     //stampo le info nel DOM
     container.innerHTML += card;
 }
-
-
